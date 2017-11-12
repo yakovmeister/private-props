@@ -1,4 +1,4 @@
-let privateProperty = require('./../../index')
+var privateProperty = require('./../../index')
 
 class Bar {
 	constructor() {
