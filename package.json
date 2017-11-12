@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "description": "Private property simulation for javascript",
   "main": "index.js",
-  "license": "MIT",
+  "license": "ISC",
   "homepage": "https://github.com/yakovmeister/private-props",
   "repository": {
     "type": "git",
     "url": "https://github.com/yakovmeister/private-props.git"
   },
   "scripts": {
-    "compile": "babel-compile -p es2017 -p es2015 src:lib/compiled",
+    "compile": "babel-compile -p es2017 -p es2015 src:lib",
     "test": "_mocha test"
   },
   "keywords": [
@@ -19,7 +19,6 @@
     "access modifier"
   ],
   "author": "Jacob Baring <owari@waifu.club>",
-  "license": "ISC",
   "dependencies": {
     "babel-polyfill": "^6.23.0"
   },

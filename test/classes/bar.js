@@ -2,7 +2,6 @@ let privateProperty = require('./../../index')
 
 class Bar {
 	constructor() {
-		console.log('ciao')
 		privateProperty(this).shouldNotBeAccessible = true
 		privateProperty(this).shouldNotBeAccessible2 = true
 		this.shouldBeAccessible = true
