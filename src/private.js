@@ -1,22 +1,19 @@
-require('babel-polyfill')
 /**
  * Simulate Private properties using WeakMap
  * @return [Function] sets or gets property from weakmap
  */
 module.exports = () => {
 	let properties = new WeakMap()
-	let id, currentContextId = {}
+	let currentContext = {}
 
     return (context) => {
-    	/** assign random digit to our current context */
-    	id = Math.random()
         
         if (!properties.has(context)) {
             properties.set(context, {})
-            currentContextId[context] = id
+            currentContext[context] = JSON.stringify(context)
         }
 
-        if(id != currentContextId[context]) {
+        if(JSON.stringify(context) != currentContext[context]) {
         	return {}
         }
 
