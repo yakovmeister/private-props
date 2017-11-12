@@ -1,6 +1,6 @@
 {
   "name": "private-props",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Private property simulation for javascript",
   "main": "index.js",
   "license": "ISC",
