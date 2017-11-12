@@ -1,1 +1,1 @@
-module.exports = require('./src/private')()
+module.exports = require('./lib/private')()
