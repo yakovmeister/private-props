@@ -1,0 +1,25 @@
+{
+  "name": "private-props",
+  "version": "0.1.0",
+  "description": "Private property simulation for javascript",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/yakovmeister/private-props",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yakovmeister/private-props.git"
+  },
+  "scripts": {
+    "test": "_mocha test"
+  },
+  "keywords": [
+    "private property",
+    "private",
+    "access modifier"
+  ],
+  "author": "Jacob Baring <owari@waifu.club>",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
