@@ -1,3 +1,4 @@
+require('babel-polyfill')
 /**
  * Simulate Private properties using WeakMap
  * @return [Function] sets or gets property from weakmap
