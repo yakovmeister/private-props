@@ -1,4 +1,5 @@
 var privateProperty = require('./../../index')
+require('babel-polyfill')
 
 class Bar {
 	constructor() {
