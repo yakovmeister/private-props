@@ -1,17 +1,15 @@
-var privateProperty = require('./../../index')
-require('babel-polyfill')
+'use strict';
 
-class Bar {
-	constructor() {
-		privateProperty(this).shouldNotBeAccessible = true
-		privateProperty(this).shouldNotBeAccessible2 = true
-		this.shouldBeAccessible = true
-		this.shouldBeAccessible2 = true
-	}
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	getInaccessible() {
-		return privateProperty(this).shouldNotBeAccessible
-	}
-}
+require('babel-polyfill');
+var props = require('./../../index');
 
-module.exports = Bar
+var Bar = function Bar() {
+    _classCallCheck(this, Bar);
+
+    props(this).shouldNotBeAccessible = true;
+};
+
+module.exports = Bar;
+//# sourceMappingURL=bar.js.map

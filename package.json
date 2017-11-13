@@ -11,6 +11,7 @@
   },
   "scripts": {
     "compile": "babel-compile -p es2017 -p es2015 src:lib",
+    "compile:test": "babel-compile -p es2017 -p es2015 test/classes:lib",
     "test": "_mocha test"
   },
   "keywords": [

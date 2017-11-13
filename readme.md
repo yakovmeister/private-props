@@ -31,3 +31,7 @@ class Foo {
 
 module.exports = Foo
 ```  
+  
+## Issues  
+  
+- somehow the content of the class is visible if you supply an instantiated version of the class

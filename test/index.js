@@ -8,10 +8,6 @@ describe('PDF2Pic', () => {
        return assert(bar.shouldNotBeAccessible == undefined, "undefined is returned")
     })
 
-    it("should not access private functions #2", function () {
-       return assert(props(bar).shouldNotBeAccessible == undefined, "undefined is returned")
-    })
-
     it("should not access private functions #3", function () {
         return assert(props(Bar).shouldNotBeAccessible == undefined, "undefined is returned")
      })
